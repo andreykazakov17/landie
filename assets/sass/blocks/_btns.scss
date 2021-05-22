@@ -1,0 +1,22 @@
+.btn {
+    background: $color-800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    &__small {
+        width: 160px;
+        height: 26px;
+    }
+    &__big {
+        width: 189px;
+        height: 36px;
+    }
+    &__no-box {
+        width: 189px;
+        height: 36px;
+        background: #fff;
+        border-radius: 2px;
+        border: 2px solid $color-900;
+    }
+}

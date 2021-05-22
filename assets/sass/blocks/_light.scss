@@ -1,0 +1,48 @@
+.light {
+    padding: 160px 0 108px 0;
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 540px);
+        column-gap: 30px;
+        &__item {
+            &_info {
+                padding-top: 50px;
+            }
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+        color: $color-900;
+    }
+    &__text {
+        margin-top: 16px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        color: $color-400;
+    }
+    &__wrapper {
+        margin-top: 80px;
+        display: grid;
+        grid-template-columns: repeat(2, 255px);
+        grid-template-rows: 138px;
+        grid-auto-rows: auto;
+        column-gap: 30px;
+        row-gap: 40px;
+    }
+    &__subtitle {
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: $color-900;
+    }
+    &__subtext {
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: $color-grey;
+    }
+}

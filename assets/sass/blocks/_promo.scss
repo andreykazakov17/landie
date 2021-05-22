@@ -1,0 +1,114 @@
+.promo {
+    padding-top: 50px;
+    height: 1161px;
+    background-image: url('../img/designer_1.svg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    header {
+        position: relative;
+        height: 60px;
+        nav {
+            height: 50px;
+            .menu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &__items {
+                    display: flex;
+                    justify-content: space-between;
+                    list-style-type: none;
+                    width: 245px;
+                    top: 50%;
+                    li {
+                        display: block;
+                    }
+                }
+                &_item {
+                    a {
+                        text-decoration: none;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: $color-500;
+                    }
+                }
+                &__link {
+                    font-weight: 500;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: center;
+                }
+                &__btn {
+                    a {
+                        text-decoration: none;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 243px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 66px;
+        width: 540px;
+    }
+    &__text {
+        margin-top: 20px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        width: 540px;
+    }
+    &__btns {
+        margin-top: 69px;
+        display: flex;
+        justify-content: space-between;
+        width: 409px;
+        a {
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        :nth-child(2) {
+            color: $color-900;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .hamburger {
+        position: absolute;
+        width: 36px;
+        height: 21px;
+        top: 3px;
+        left: 0px;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        display: none;
+        cursor: pointer;
+        span {
+            width: 30px;
+            height: 3px;
+            background-color: $color-900;
+        }
+        span.long {
+            width: 36px;
+        }
+    }
+}
+

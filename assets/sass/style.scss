@@ -1,0 +1,38 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+@import 'base/variables';
+@import 'blocks/btns';
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+    color: $color-logo-primary;
+}
+
+@import 'blocks/promo';
+@import 'blocks/light';
+@import 'blocks/fast';
+@import 'blocks/footer';
+@import 'blocks/media';
