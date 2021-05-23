@@ -37,3 +37,62 @@
 
               console.log('resultAbc', resultAbc);
               console.log('resultAbcdef', resultAbcdef);
+              
+Модификации функции drawRating
+Вариант 1:
+
+        function drawRating(vote) {
+        let rating;
+
+        function between(x, min, max) { 
+            return x >= min && x <= max; 
+        }
+
+        if (between(vote, 0, 20)) {
+            rating = '★☆☆☆☆';
+        }
+        else if (between(vote, 20, 40)) {
+            rating = '★★☆☆☆';
+        }
+        else if (between(vote, 40, 60)) {
+            rating ='★★★☆☆';
+        }
+        else if (between(vote, 60, 80)) {
+            rating = '★★★★☆';
+        }
+        else {
+            rating = '★★★★★';
+        }
+
+        return 'The rating is ' + rating;
+    }
+
+    console.log(drawRating(31));
+    
+Вариант 2:
+
+        function drawRating(vote) {
+        let rating;
+
+        switch(vote) {
+            case (vote >= 0 && vote <= 20 && vote):
+                rating = '★☆☆☆☆';
+                break;
+            case (vote > 20 && vote <= 40 && vote):
+                rating = '★★☆☆☆';
+                break;
+            case (vote > 40 && vote <= 60 && vote):
+                rating = '★★★☆☆';
+                break;
+            case (vote > 60 && vote <= 80 && vote):
+                rating = '★★★★☆';
+                break;
+            case (vote > 80 && vote <= 100 && vote):
+                rating = '★★★★★';
+                break;
+        }
+
+        return 'The rating is ' + rating;
+    }
+
+    console.log(drawRating(80));
